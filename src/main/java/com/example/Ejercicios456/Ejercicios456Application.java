@@ -16,13 +16,13 @@ public class Ejercicios456Application {
 		ApplicationContext context = SpringApplication.run(Ejercicios456Application.class, args);
 		LaptopRepository repository = context.getBean(LaptopRepository.class);
 
-		//Creamos los libros
+		//Creamos los pc
 		Laptop laptop1 = new Laptop(null,"Lenovo", "Gaming", 1199.95, LocalDate.of(2020 , 01, 01));
 		Laptop laptop2 = new Laptop(null,"Dell", "Sobremesa", 949.95, LocalDate.of(2021 , 01, 01));
 		Laptop laptop3 = new Laptop(null,"Hp", "Ofimatica", 650.00, LocalDate.of(2022 , 01, 01));
 
 
-		//Almacenamos los libros
+		//Almacenamos los pc
 
 		repository.save(laptop1);
 		repository.save(laptop2);
